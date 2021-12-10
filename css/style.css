@@ -1,0 +1,139 @@
+i{
+	color: tomato;
+	transition: .5s;
+}
+i:hover{
+	color: white;
+}
+.Searchbar{
+	width: 25rem !important;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+}
+.icon i{
+ 	color: tomato;
+ 	margin-right: 10px;
+ 	position: relative;
+}
+.icon:before{
+	content: " ";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: purple;
+	border-radius: 50px;
+	z-index: 1;
+	animation: ani 1s linear infinite;
+}
+@keyframes ani{
+	0%{
+		transform:scale(0);
+		opacity:.7;
+
+	}
+	50%{
+		transform:scale(.5);
+		opacity: .5;
+	}
+	100%{
+		transform:scale(1.5);
+		opacity: 0;
+	}
+}
+.textRight{
+	text-align: right !important;
+}
+.stickyTop{
+	position: sticky !important;
+	top: 0;
+	z-index: 111111;
+}
+.imglast{
+	height: 206px;
+}
+img{
+	position: relative;
+}
+.overlayHover:hover .overlay{
+ 	position: absolute;
+	background: black;
+	width: 89%;
+	height: 202px;
+	z-index: 1;
+	opacity: .7;
+	top: 6px;
+	transition: .5s;
+}
+
+.newProducts span i{
+  color: #bbbb0a;
+}
+
+.watchSection span i{
+  color: #bbbb0a;
+}
+
+.FooterSection{
+	background-color: #111;
+}
+.footerMenu ul{
+	list-style: none;
+}
+
+.footerMenu ul li a{
+	color: white;
+	text-decoration: none;
+	transition: .5s;
+}
+.btnsuscribe{
+	padding: 0 20px;
+	outline: none;
+	border: none;
+}
+.btnsuscribe:hover{
+	background-color: tomato;
+}
+.suscribe{
+	display: flex;
+	flex-direction: column;
+}
+.suscribe input{
+	border-radius: 5px;
+	outline: none;
+}
+
+.footerMenu ul li:hover a {
+   	color: tomato;
+}
+
+/*Responsive*/
+@media screen and (max-width: 992px){
+	.Searchbar{
+	width: 100% !important;
+}
+.topbarItem{
+	flex-direction: row;
+}
+
+@media screen and (max-width: 776px){
+	.Searchbar{
+	width: 100% !important;
+
+}
+.topbarItem{
+	flex-direction: column;
+	align-items: center;
+}
+}
+
+@media screen and (max-width: 520px){
+	.Searchbar{
+	width: 100% !important;
+}
+.topbarItem{
+	flex-direction: column;
+	/*justify-content: center;*/
+	align-items: center;
+}
+}
